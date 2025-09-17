@@ -14,6 +14,11 @@
     --white: rgb(255, 255, 255);
 }
 
+main {
+    max-width: 384px;
+    width: 100%;
+}
+
 body {
     font-family: 'Inter', sans-serif;
     background-color: var(--grey900);
@@ -27,7 +32,6 @@ body {
 }
 
 .card-wrapper {
-    max-width: 384px;
     padding: 0 12px;
     box-sizing: border-box;
 }
