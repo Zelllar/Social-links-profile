@@ -1,0 +1,115 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --grey900: rgb(20, 20, 20);
+    --grey800: rgb(31, 31, 31);
+    --grey700: rgb(51, 51, 51);
+    --green: rgb(196, 248, 42);
+    --white: rgb(255, 255, 255);
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--grey900);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    gap: 0.5rem;
+}
+
+.card-wrapper {
+    max-width: 384px;
+    padding: 0 12px;
+    box-sizing: border-box;
+}
+
+.profile-card {
+    background-color: var(--grey800);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2.5rem;
+    border-radius: 12px;
+    width: 100%;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.profile-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.profile-location {
+    color: var(--green);
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.description {
+    color: white;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.profile-links {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+.profile-link {
+   padding: 0.75rem;
+   background-color: var(--grey700);
+   color: white;
+   border-radius: 8px;
+   font-size: 0.875rem;
+   line-height: 150%;
+   font-weight: 600;
+   text-decoration: none;
+   transition: background-color 0.3s ease-in-out;
+   width: 100%;
+}
+
+.profile-link:hover,
+.profile-link:active {
+    background-color: var(--green);
+    color: var(--grey700);
+}
+
+.profile-image {
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
